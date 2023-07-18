@@ -1,0 +1,34 @@
+git init  -- allow git in folder
+git remote add origin 'clone url' --- origin where to push changes
+
+git push origin branch_name   --- push branch to origin remote
+
+git checkout -b branch_name   --- Create Branch
+
+git clone 'clone_url' --- to get repository details and files and projects from git 
+
+
+to restore all from Git:
+
+1.git reset --soft HEAD~
+2.git restore --staged .
+3.git restore .
+
+
+git clean -f
+git clean -f -x
+git clean -fd
+Once the untracked files are deleted, they cannot be restored.
+Before running the git clean command, perform dry run to know what the are files that will be deleted.
+-n flag is used to perform dry run.
+-f flag is used to remove untracked files.
+-fd flag is used to remove untracked files and folders.
+-fx flag is used to remove untracked and ignored files.
+
+
+
+$ git log --oneline
+
+3fad532  Last commit   (HEAD)
+3bnaj03  Commit before HEAD   (HEAD~1)
+vcn3ed5  Two commits before HEAD   (HEAD~2)
